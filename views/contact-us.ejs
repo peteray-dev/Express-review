@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./includes/head.ejs') %>
+</head>
+<body>
+    <%- include('./includes/nav.ejs') %>
+    <form action="/message" method="POST" class="container">
+        <div class="form-group">
+            <label>Username
+                <input class="form-control" type="text" placeholder="name" name="username" id="Full name">
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>Address
+                <input class="form-control" type="text" placeholder="Address" name="Address" id="Full name">
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>email
+                <input class="form-control" type="email" placeholder="email" name="Email" id="Full name">
+            </label>
+        </div>
+
+        
+        <div class="form-group">
+            <label>message
+                <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
+            </label>
+        </div>
+        <button class="btn btn-primary">Contact Us</button>
+    </form>
+
+    
+</body>
+</html>
